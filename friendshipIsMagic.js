@@ -6,8 +6,12 @@ var Graph = function (a, b, settings) {
 
 var G = new Graph(1, 2);
 
+Graph.prototype.doMagic = function () {
+    return "Friendship is magic!";
+}
+
 Graph.prototype = {
-    doMagic: function () {
+    doAnotherKindOfMagic: function () {
         return "Friendship is magic!";
     }
 }
